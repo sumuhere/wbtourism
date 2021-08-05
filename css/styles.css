@@ -15,6 +15,12 @@ font-family: 'Nunito', sans-serif; For Normal Text
     text-decoration: none;
 }
 
+/* Global Variable  */
+
+:root {
+    --navbar-color: #50CB93;
+}
+
 /* Global Class*/
 
 .container {
@@ -36,7 +42,7 @@ p {
 
 a {
     font-family: 'Baloo Tamma 2', cursive;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .img-responsive {
@@ -49,7 +55,7 @@ a {
 
 nav {
     position: fixed;
-    /* background-color: #53B8BB; */
+    /* background-color: #53B8BB; if needed */
     width: 100%;
     z-index: 90;
     padding: 8px 0;
@@ -99,11 +105,11 @@ nav {
 }
 
 .nav-fixed h2 {
-    color: #50CB93;
+    color: var(--navbar-color);
 }
 
 .nav-fixed ul li a {
-    color: #50CB93;
+    color: var(--navbar-color);
 }
 
 /* <-----------------Header----------------->  */
