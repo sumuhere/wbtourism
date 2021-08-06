@@ -1,4 +1,4 @@
-//navbar color change
+//navbar-links color change
 $(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
         $('nav').addClass('nav-fixed');
@@ -7,8 +7,22 @@ $(window).scroll(function () {
     }
 });
 
-//countdown
 
+//nav-header color change
+$(document).ready(function(){       
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 100) {
+            $('.nav-header').css('color', '#000');
+        } else {
+            $('.nav-header').css('color', '#fff');
+        }
+    });
+});
+
+
+//countdown
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
