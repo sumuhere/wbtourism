@@ -82,6 +82,22 @@ nav {
     color: var(--navbar-color);
 }
 
+.nav-fixed ul li a:before {
+    content: "a";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--navbar-color);
+    width: 0%;
+    height: 3px;
+    font-size: 0px;
+    transition: all 0.3s ease;
+}
+
+.nav-fixed ul li a:hover:before {
+    width: 100%;
+}
+
 /* <-----------------Home Section----------------->  */
 
 header {
@@ -113,3 +129,55 @@ video#background-video {
     object-fit: cover;
 }
 
+.header-info-part p {
+    font-size: 18px;
+    margin-top: 17px;
+}
+
+
+.header-info-part a {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    font-size: 23px;
+    border: 3px solid var(--navbar-color) ;
+    border-radius: 6px;
+    padding: 5px 23px;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+.header-info-part a:hover {
+    color: var(--navbar-color);
+    border: 3px solid #fff;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+/* <-------------Destination Section-------------> */
+
+.destination-heading h2 {
+    margin-bottom: 50px;
+}
+
+#image-slider {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/koipul.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+#image-slider h2 {
+    font-size: 30px;
+}
+
+.slider-img-info h3 {
+    margin-top: 15px;
+}
+
+.slider-img-info p {
+    margin-top: 6px;
+}
