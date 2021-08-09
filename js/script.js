@@ -50,6 +50,7 @@ $(document).ready(function(){
 document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '#card-slider', {
 		perPage    : 3,
+        autoplay: true,
 		breakpoints: {
 			600: {
 				perPage: 1,
