@@ -24,6 +24,15 @@
     />
   </head>
   <body>
+
+      <!-- Top to Scroll Button -->
+    <div id="arrow">
+      <!-- 1st style -->
+      <!-- <i class="las la-arrow-up"></i>  --> 
+      <!-- 2nd style -->
+      <i class="las la-arrow-circle-up"></i> 
+    </div>
+
     <!-- -----------------------------Navbar Section---------------------------------- -->
     <nav>
       <div class="container">
@@ -59,7 +68,8 @@
                 >
               </li>
               <!-- <li><a class="link-hover" href="">Gallery</a></li> -->
-              <li><a class="link-hover" href="">Contact</a></li>
+              <li><a class="link-hover" href="#logo-slide">Partners</a></li>
+              <li><a class="link-hover" href="#contact-heading">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -154,7 +164,8 @@
     </section>
 
     <!-- <----------------------------------Destination Section---------------------------------- -->
-    <section id="image-slider">
+    
+      <section id="image-slider">
       <div class="container">
         <div class="destination-heading">
           <h2>
@@ -166,6 +177,78 @@
         <div class="splide" id="card-slider">
           <div class="splide__track">
             <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/iconic-howrah-bridge.png"
+                  class="img-responsive"
+                  alt="Howrah Bridge"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Rabindra Setu / Howrah Bridge</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/2nd-hoogly-bridge.jpg"
+                  class="img-responsive"
+                  alt="Vidyasagar Setu"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Vidyasagar Setu / Second Hooghly Bridge</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/victoria-memorial.jpg"
+                  class="img-responsive"
+                  alt="victoria Memorial Hall"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Victoria Memorial Hall</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/murshidabad.jpg"
+                  class="img-responsive"
+                  alt="hajarduari-palace"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Hajarduari Palace</h3>
+                  <p>Murshidabad</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/princep-ghat.jpg"
+                  class="img-responsive"
+                  alt="princep-ghat"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>James Princep Ghat</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/sundarbarns.png"
+                  class="img-responsive"
+                  alt="Sundarban"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Sundarban National Park</h3>
+                  <p>Sundarban</p>
+                </div>
+              </li>
               <li class="splide__slide">
                 <img
                   src="./assets/images/square-cut/darjeeling.jpg"
@@ -267,21 +350,71 @@
         </div>
       </div>
     </section>
-    <!-- <--------------------------------------Contact Section----------------------------------- -->
+
+    <!-- <---------------------------Our Partners Section--------------------------- -->
+
+    <section id="logo-slider">
+      <div class="container">
+        <div class="partner-heading">
+          <h2>
+            In<span style="color: #50cb93"> Partnership </span>With
+          </h2>  
+          <div class="splide" id="logo-slide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/incredible-india.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/india.gov.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/air-india.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/oyo-room.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/make-my-trip.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/trip-advisor.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/hyatt.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/goibibo.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/vistara.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/park-hotels.png">
+                    </li>
+                </ul>
+            </div>
+        </div>  
+        </div>
+      </div>
+    </section>  
+
+    <!-- <----------------------------------Contact Section-------------------------------- -->
+
     <section class="contact">
-      <div class="contact-heading">
+      <div class="contact-heading" id="contact-heading">
         <h2><span style="color: #50cb93">Contact</span> Us</h2>
       </div>
       <div class="row">
         <div class="contact-col">
           <div>
             <i class="las la-map-marked-alt"></i>
-              <span>
-                <a href="https://goo.gl/maps/SiBCrwXczisZXckQA" target="_blank">
-                  <h4>New Secretariat Building 1, K. S. Roy Road, 3rd Floor</h4>
-                  <h5>Kolkata - 700001, West Bengal</h5>
-                </a>
-              </span>
+            <span>
+              <a href="https://goo.gl/maps/SiBCrwXczisZXckQA" target="_blank">
+                <h4>New Secretariat Building 1, K. S. Roy Road, 3rd Floor</h4>
+                <h5>Kolkata - 700001, West Bengal</h5>
+              </a>
+            </span>
           </div>
           <div>
             <i class="las la-phone"></i>
@@ -302,25 +435,40 @@
         </div>
         <div class="contact-col">
           <form action="">
-            <input type="text" placeholder="Enter Your Name" required>
-            <input type="email" placeholder="Enter Your Email" required>
-            <input type="text" placeholder="Enter Subject" required>
-            <textarea rows="4" placeholder="Write Something Sweet..." required></textarea>
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter Your Email" required />
+            <input type="text" placeholder="Enter Subject" required />
+            <textarea
+              rows="4"
+              placeholder="Write Something Sweet..."
+              required
+            ></textarea>
             <button class="button"><span>Send </span></button>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- <--------------------------------Footer Section--------------------------- -->
     <footer>
-      <p>Built With ❤️ by <a href="https://github.com/sumuhere">Suman Mondal</a></p>
-      <p>Thanks to <a href="https://www.youtube.com/user/etherealcoloursfilms" target="_blank">Ethereal</a>, <a href="https://github.com/asimbera" target="_blank">Asim Bera</a>, & Photographers who loves Photography</p>
-      <br>
-      <div class="copy">
-          Government of West Bengal &copy; 2021 - Present
-      </div>
-  </footer>
+      <h3>
+        <p>
+          Built With ❤️ by
+          <a href="https://github.com/sumuhere">Suman Mondal</a>
+        </p>
+      </h3>
+      <p>
+        Thanks to
+        <a
+          href="https://www.youtube.com/user/etherealcoloursfilms"
+          target="_blank"
+          >Ethereal</a
+        >, <a href="https://github.com/asimbera" target="_blank">Asim Bera</a>,
+        & Photographers who loves Photography
+      </p>
+      <br />
+      <div class="copy">Government of West Bengal &copy; 2021 - Present</div>
+    </footer>
 
     <!-- Adding JavaScript -->
     <script src="./js/jquery-3.1.1.min.js"></script>

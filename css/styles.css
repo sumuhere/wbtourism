@@ -11,9 +11,27 @@ font-family: 'Nunito', sans-serif; For Normal Text
 
 :root {
   --navbar-color: #50cb93;
-  --icon-color: #368b85;
+  --service-icon-color: #368b85;
   --contact-icon-color: #096843;
+  --footer-color: #12412F;
   --icon-head: #0f044c;
+}
+
+/* Arrow Button */
+
+i.las.la-arrow-circle-up {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  font-size: 45px;
+  /* background-color: #50cb93; */
+  color: #50cb93;
+  width:40px;
+  height: 60px;
+  line-height: 40px;
+  text-align: center;
+  /* border-radius: 50px; */
+  cursor: pointer;
 }
 
 /* <---------------Navbar-----------------> */
@@ -181,7 +199,7 @@ video#background-video {
 .services .box-container .box i {
   padding: 20px;
   font-size: 5rem;
-  color: var(--icon-color);
+  color: var(--service-icon-color);
 }
 
 .services .box-container .box h3 {
@@ -319,9 +337,20 @@ video#background-video {
   right: 0;
 }
 
-/* <------------Footer Section----------------> */
+/* <--------------Partners Section---------------> */
 
-footer p{
+.partner-heading h2 {
+  text-align: center;
+  margin: 30px 0;
+  padding: 5px 0;
+  /* font-size: 2rem; */
+}
+
+
+
+/* <---------------Footer Section----------------> */
+
+footer p {
   width: 100%;
   text-align: center;
   padding: 10px 0;
@@ -332,7 +361,7 @@ footer p{
   text-align: center;
   padding: 20px 0;
   color: white;
-  background-color: #082032;
+  background-color: var(--footer-color);
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
 }

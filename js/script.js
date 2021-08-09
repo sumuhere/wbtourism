@@ -24,6 +24,7 @@ $(document).ready(function () {
 
 //<-----------carousel slider------------->
 
+//destination carousel
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#card-slider', {
     // cover: true,
@@ -31,6 +32,22 @@ document.addEventListener('DOMContentLoaded', function () {
     gap: '15px',
     speed: 600,
     interval: 2000,
+    type: 'loop',
+    perPage: 3,
+    autoplay: true,
+    breakpoints: {
+      600: {
+        perPage: 1,
+      },
+    },
+  }).mount();
+    //brand-logo carousel
+  new Splide('#logo-slide', {
+    // cover: true,
+    height: '300px',
+    gap: '15px',
+    speed: 400,
+    interval: 1500,
     type: 'loop',
     perPage: 3,
     autoplay: true,
