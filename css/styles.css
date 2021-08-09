@@ -1,8 +1,8 @@
 /* Fonts */
-/* 
+/*
 font-family: 'Baloo Tamma 2', cursive; For Banner
 font-family: 'Georama', sans-serif; For Heading
-font-family: 'Nunito', sans-serif; For Normal Text 
+font-family: 'Nunito', sans-serif; For Normal Text
 */
 
 @import url(./global.css);
@@ -53,7 +53,7 @@ nav {
 }
 
 .navbar ul li a:before {
-  content: "a";
+  content: 'a';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -82,7 +82,7 @@ nav {
 }
 
 .nav-fixed ul li a:before {
-  content: "a";
+  content: 'a';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -208,6 +208,17 @@ video#background-video {
   padding: 50px 0px;
   color: #fff;
   text-align: center;
+
+  /* max-height: 100vh; */
+}
+
+/* #card-slider {
+  height: 100vh;
+} */
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
 #image-slider h2 {
