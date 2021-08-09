@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preload" as="style" href=".css/style.css" />
+    <!-- <link rel="preload" as="style" href="./css/style.css" /> -->
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,8 +10,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/line-awesome.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/splide-sea-green.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +24,15 @@
     />
   </head>
   <body>
+
+      <!-- Top to Scroll Button -->
+    <div id="arrow">
+      <!-- 1st style -->
+      <!-- <i class="las la-arrow-up"></i>  --> 
+      <!-- 2nd style -->
+      <i class="las la-arrow-circle-up"></i> 
+    </div>
+
     <!-- -----------------------------Navbar Section---------------------------------- -->
     <nav>
       <div class="container">
@@ -38,7 +47,8 @@
           </div>
 
           <div class="nav-header">
-            <p>DEPARTMENT OF TOURISM<br />GOVERNMENT OF WEST BENGAL</p>
+            <p class="dept-tour">DEPARTMENT OF TOURISM</p>
+            <p class="govt-wb">GOVERNMENT OF WEST BENGAL</p>
           </div>
           <!-- Navlinks -->
           <div class="navbar" id="navbar-id">
@@ -49,9 +59,17 @@
               <li>
                 <a class="link-hover" href="#image-slider">Destinations</a>
               </li>
-              <li><a class="link-hover" href="https://www.wbtdcl.com/package" target="_blank">Booking</a></li>
-              <li><a class="link-hover" href="">Gallery</a></li>
-              <li><a class="link-hover" href="">Contact</a></li>
+              <li>
+                <a
+                  class="link-hover"
+                  href="https://www.wbtdcl.com/package"
+                  target="_blank"
+                  >Booking</a
+                >
+              </li>
+              <!-- <li><a class="link-hover" href="">Gallery</a></li> -->
+              <li><a class="link-hover" href="#logo-slide">Partners</a></li>
+              <li><a class="link-hover" href="#contact-heading">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -76,7 +94,7 @@
         </div>
         <div class="background-video">
           <video id="background-video" autoplay loop muted>
-            <source src="./assets/videos/medium-30fps.mp4" type="video/mp4" />
+            <source src="./assets/videos/max-60fps.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -110,7 +128,7 @@
         </div>
         <div class="box">
           <i class="las la-archway"></i>
-          <h3>Festive</h3>
+          <h3>Festival</h3>
           <p>
             West Bengal celebrates many holidays and festivals.The Bengali
             proverb “Baro Mase Tero Parbon” or “Thirteen festivals in twelve
@@ -146,177 +164,319 @@
     </section>
 
     <!-- <----------------------------------Destination Section---------------------------------- -->
-    <section id="image-slider">
-      <div class="container destination-heading">
-        <h2>
-          Start Planning Your Destination
-          <span style="color: #50cb93">Bengal</span>
-        </h2>
-        <div class="owl-carousel owl-theme autoplay">
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/victoria-memorial.jpg"
-                class="img-responsive"
-                alt="Victoria Memorial Hall"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Victoria Memorial Hall</h3>
-                <p>Kolkata</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/darjeeling.jpg"
-                class="img-responsive"
-                alt="Darjeeling"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Darjeeling</h3>
-                <p>Darjeeling District</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/dakshineswar-temple.jpg"
-                class="img-responsive"
-                alt="Dakshineswar Temple"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Dakshineswar Temple</h3>
-                <p>Kolkata</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/digha.jpg"
-                class="img-responsive"
-                alt="Digha Sea Beach"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Digha Sea Beach</h3>
-                <p>Purba Medinipur</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/cooch-behar-rajbari.jpg"
-                class="img-responsive"
-                alt="Cooch Behar Palace"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Cooch Behar Palace</h3>
-                <p>Cooch Behar District</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/bankura.jpg"
-                class="img-responsive"
-                alt="Bankura"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Bankura</h3>
-                <p>Bankura District</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/dooars.jpg"
-                class="img-responsive"
-                alt="Dooars"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Dooars</h3>
-                <p>Jalpaiguri</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/iskon-temple.jpg"
-                class="img-responsive"
-                alt="Iskon Temple"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Mayapur</h3>
-                <p>Nadia</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/shantiniketan.jpg"
-                class="img-responsive"
-                alt="Iskon Temple"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Shantiniketan</h3>
-                <p>Birbhum</p>
-              </div>
-            </div>
+    
+      <section id="image-slider">
+      <div class="container">
+        <div class="destination-heading">
+          <h2>
+            Start Planning Your Destination
+            <span style="color: #50cb93">Bengal</span>
+          </h2>
+        </div>
+
+        <div class="splide" id="card-slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/iconic-howrah-bridge.png"
+                  class="img-responsive"
+                  alt="Howrah Bridge"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Rabindra Setu / Howrah Bridge</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/2nd-hoogly-bridge.jpg"
+                  class="img-responsive"
+                  alt="Vidyasagar Setu"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Vidyasagar Setu / Second Hooghly Bridge</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/victoria-memorial.jpg"
+                  class="img-responsive"
+                  alt="victoria Memorial Hall"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Victoria Memorial Hall</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/murshidabad.jpg"
+                  class="img-responsive"
+                  alt="hajarduari-palace"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Hajarduari Palace</h3>
+                  <p>Murshidabad</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/princep-ghat.jpg"
+                  class="img-responsive"
+                  alt="princep-ghat"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>James Princep Ghat</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/sundarbarns.png"
+                  class="img-responsive"
+                  alt="Sundarban"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Sundarban National Park</h3>
+                  <p>Sundarban</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/darjeeling.jpg"
+                  class="img-responsive"
+                  alt="Darjeeling"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Darjeeling</h3>
+                  <p>Darjeeling District</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/dakshineswar-temple.jpg"
+                  class="img-responsive"
+                  alt="Dakshineswar Temple"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Dakshineswar Temple</h3>
+                  <p>Kolkata</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/digha.jpg"
+                  class="img-responsive"
+                  alt="Digha Sea Beach"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Digha Sea Beach</h3>
+                  <p>Purba Medinipur</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/cooch-behar-rajbari.jpg"
+                  class="img-responsive"
+                  alt="Cooch Behar Palace"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Cooch Behar Palace</h3>
+                  <p>Cooch Behar District</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/bankura.jpg"
+                  class="img-responsive"
+                  alt="Bankura"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Bankura</h3>
+                  <p>Bankura District</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/dooars.jpg"
+                  class="img-responsive"
+                  alt="Dooars"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Dooars</h3>
+                  <p>Jalpaiguri</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/iskon-temple.jpg"
+                  class="img-responsive"
+                  alt="Iskon Temple"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Mayapur</h3>
+                  <p>Nadia</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/shantiniketan.jpg"
+                  class="img-responsive"
+                  alt="Iskon Temple"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Shantiniketan</h3>
+                  <p>Birbhum</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id repellat
-        commodi itaque asperiores, optio iure praesentium at alias rerum non!
-        Hic aut non eius quisquam magni. Similique fugiat deserunt neque
-        accusamus eligendi est provident nesciunt numquam nam nisi praesentium
-        esse facere voluptas nemo exercitationem et, harum aperiam! Fuga,
-        impedit temporibus nostrum maxime non nemo nesciunt autem ratione modi
-        earum nulla. Quod, ab voluptate? Odio sapiente iusto molestiae,
-        necessitatibus suscipit laborum laboriosam ad, magni natus, blanditiis
-        consequatur voluptates. Debitis similique accusantium quibusdam nam,
-        recusandae autem nesciunt fugiat voluptate consequatur architecto, rem
-        itaque aliquam eos, dignissimos amet quasi dolorum voluptatem ea
-        doloremque excepturi quaerat harum. Tenetur asperiores cumque nemo dolor
-        temporibus labore eligendi laborum minus? Necessitatibus et cupiditate
-        earum, maxime fugit quod nihil temporibus? Aperiam ad cumque
-        repellendus. Similique natus harum repellat alias. In quia nisi quos
-        repellendus similique, explicabo accusamus culpa tenetur tempora
-        doloremque veritatis commodi eum, adipisci blanditiis suscipit?
-        Recusandae, quisquam ullam. Ab soluta cumque commodi at iure quae sunt
-        fugit dolore iste, non quia laborum quidem, saepe voluptas quo
-        cupiditate culpa ipsam a quis, harum animi porro! Tenetur optio nisi
-        aliquid! Dolorum, quibusdam recusandae dignissimos nostrum ipsam in odio
-        illum natus, et est reprehenderit quod vitae harum consequatur eaque!
-      </p>
+    <!-- <---------------------------Our Partners Section--------------------------- -->
+
+    <section id="logo-slider">
+      <div class="container">
+        <div class="partner-heading">
+          <h2>
+            In<span style="color: #50cb93"> Partnership </span>With
+          </h2>  
+          <div class="splide" id="logo-slide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/incredible-india.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/india.gov.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/air-india.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/oyo-room.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/make-my-trip.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/trip-advisor.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/hyatt.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/goibibo.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/vistara.png">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./assets/images/logo/park-hotels.png">
+                    </li>
+                </ul>
+            </div>
+        </div>  
+        </div>
+      </div>
+    </section>  
+
+    <!-- <----------------------------------Contact Section-------------------------------- -->
+
+    <section class="contact">
+      <div class="contact-heading" id="contact-heading">
+        <h2><span style="color: #50cb93">Contact</span> Us</h2>
+      </div>
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="las la-map-marked-alt"></i>
+            <span>
+              <a href="https://goo.gl/maps/SiBCrwXczisZXckQA" target="_blank">
+                <h4>New Secretariat Building 1, K. S. Roy Road, 3rd Floor</h4>
+                <h5>Kolkata - 700001, West Bengal</h5>
+              </a>
+            </span>
+          </div>
+          <div>
+            <i class="las la-phone"></i>
+            <span>
+              <h4><a href="tel:1800 2121 655">1800 2121 655</a></h4>
+            </span>
+          </div>
+          <div>
+            <i class="las la-envelope"></i>
+            <span>
+              <h4>
+                <a href="mailto:wbtourismpublicity1@gmail.com"
+                  >wbtourismpublicity1@gmail.com</a
+                >
+              </h4>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter Your Email" required />
+            <input type="text" placeholder="Enter Subject" required />
+            <textarea
+              rows="4"
+              placeholder="Write Something Sweet..."
+              required
+            ></textarea>
+            <button class="button"><span>Send </span></button>
+          </form>
+        </div>
+      </div>
     </section>
+
+    <!-- <--------------------------------Footer Section--------------------------- -->
+    <footer>
+      <h3>
+        <p>
+          Built With ❤️ by
+          <a href="https://github.com/sumuhere">Suman Mondal</a>
+        </p>
+      </h3>
+      <p>
+        Thanks to
+        <a
+          href="https://www.youtube.com/user/etherealcoloursfilms"
+          target="_blank"
+          >Ethereal</a
+        >, <a href="https://github.com/asimbera" target="_blank">Asim Bera</a>,
+        & Photographers who loves Photography
+      </p>
+      <br />
+      <div class="copy">Government of West Bengal &copy; 2021 - Present</div>
+    </footer>
 
     <!-- Adding JavaScript -->
     <script src="./js/jquery-3.1.1.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/splide.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/nav-active.js"></script>
     <!-- Typewriter.js -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./js/typewrite.js"></script>
-    <script src="./js/nav-active.js"></script>
   </body>
 </html>

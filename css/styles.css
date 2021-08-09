@@ -1,8 +1,8 @@
 /* Fonts */
-/* 
+/*
 font-family: 'Baloo Tamma 2', cursive; For Banner
 font-family: 'Georama', sans-serif; For Heading
-font-family: 'Nunito', sans-serif; For Normal Text 
+font-family: 'Nunito', sans-serif; For Normal Text
 */
 
 @import url(./global.css);
@@ -11,8 +11,27 @@ font-family: 'Nunito', sans-serif; For Normal Text
 
 :root {
   --navbar-color: #50cb93;
-  --icon-color: #368b85;
+  --service-icon-color: #368b85;
+  --contact-icon-color: #096843;
+  --footer-color: #12412F;
   --icon-head: #0f044c;
+}
+
+/* Arrow Button */
+
+i.las.la-arrow-circle-up {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  font-size: 45px;
+  /* background-color: #50cb93; */
+  color: #50cb93;
+  width:40px;
+  height: 60px;
+  line-height: 40px;
+  text-align: center;
+  /* border-radius: 50px; */
+  cursor: pointer;
 }
 
 /* <---------------Navbar-----------------> */
@@ -36,9 +55,13 @@ nav {
   width: 56px;
 }
 
-.nav-header p {
+.nav-header .dept-tour, .nav-header .govt-wb {
   font-size: large;
   font-weight: 700;
+}
+
+.nav-header .dept-tour {
+  text-align: center;
 }
 
 .navbar ul li {
@@ -53,7 +76,7 @@ nav {
 }
 
 .navbar ul li a:before {
-  content: "a";
+  content: 'a';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -82,7 +105,7 @@ nav {
 }
 
 .nav-fixed ul li a:before {
-  content: "a";
+  content: 'a';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -176,7 +199,7 @@ video#background-video {
 .services .box-container .box i {
   padding: 20px;
   font-size: 5rem;
-  color: var(--icon-color);
+  color: var(--service-icon-color);
 }
 
 .services .box-container .box h3 {
@@ -201,13 +224,20 @@ video#background-video {
 
 #image-slider {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/images/koipul.jpg");
-  background-attachment: fixed;
+    url('../assets/images/koipul.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0px;
+  margin-top: 35px;
   color: #fff;
   text-align: center;
+
+  /* max-height: 100vh; */
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
 #image-slider h2 {
@@ -220,4 +250,118 @@ video#background-video {
 
 .slider-img-info p {
   margin-top: 6px;
+}
+
+
+/* <----------------Contact Section------------------> */
+
+.contact .contact-heading h2 {
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+}
+
+.contact .row {
+  display: flex;
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 2.5rem;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div i {
+  font-size: 2rem;
+  color: var(--contact-icon-color);
+  margin: 10px;
+}
+
+.contact-col input, .contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: var(--contact-icon-color);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* <--------------Partners Section---------------> */
+
+.partner-heading h2 {
+  text-align: center;
+  margin: 30px 0;
+  padding: 5px 0;
+  /* font-size: 2rem; */
+}
+
+
+
+/* <---------------Footer Section----------------> */
+
+footer p {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.copy {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  background-color: var(--footer-color);
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
 }
