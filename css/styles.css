@@ -12,6 +12,7 @@ font-family: 'Nunito', sans-serif; For Normal Text
 :root {
   --navbar-color: #50cb93;
   --icon-color: #368b85;
+  --contact-icon-color: #096843;
   --icon-head: #0f044c;
 }
 
@@ -209,6 +210,7 @@ video#background-video {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0px;
+  margin-top: 35px;
   color: #fff;
   text-align: center;
 
@@ -230,4 +232,107 @@ video#background-video {
 
 .slider-img-info p {
   margin-top: 6px;
+}
+
+
+/* <----------------Contact Section------------------> */
+
+.contact .contact-heading h2 {
+  text-align: center;
+  margin: 40px 0;
+  padding: 5px 0;
+}
+
+.contact .row {
+  display: flex;
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 2.5rem;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div i {
+  font-size: 2rem;
+  color: var(--contact-icon-color);
+  margin: 10px;
+}
+
+.contact-col input, .contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: var(--contact-icon-color);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* <------------Footer Section----------------> */
+
+footer p{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.copy {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  background-color: #082032;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
 }

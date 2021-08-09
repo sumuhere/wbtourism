@@ -27,7 +27,7 @@ $(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#card-slider', {
     // cover: true,
-    height: '600px',
+    height: '500px',
     gap: '15px',
     speed: 600,
     interval: 2000,
