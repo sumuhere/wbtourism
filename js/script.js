@@ -22,34 +22,18 @@ $(document).ready(function () {
   });
 });
 
-//<-----------carouserl slider------------->
-
-// $('.autoplay').owlCarousel({
-//     loop:true,
-//     margin:10,
-
-//     dots: true,
-//     autoplay: true,
-//     autoplayTimeout:2000,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         500:{
-//             items:3
-//         },
-//         1000:{
-//             items:4
-//         }
-//     }
-// });
+//<-----------carousel slider------------->
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#card-slider', {
     // cover: true,
     height: '600px',
-    gap: '5px',
+    gap: '15px',
+    speed: 600,
+    interval: 2000,
+    type: 'loop',
     perPage: 3,
+    autoplay: true,
     breakpoints: {
       600: {
         perPage: 1,
