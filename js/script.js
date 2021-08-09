@@ -24,58 +24,39 @@ $(document).ready(function(){
 });
 
 
-//filter gallery
-
-$(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
-    });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
-});
-
 
 //<-----------carouserl slider------------->
 
-$('.autoplay').owlCarousel({
-    loop:true,
-    margin:10,
+// $('.autoplay').owlCarousel({
+//     loop:true,
+//     margin:10,
     
-    dots: true,
-    autoplay: true,
-    autoplayTimeout:2000,
-    responsive:{
-        0:{
-            items:1
-        },
-        500:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-});
+//     dots: true,
+//     autoplay: true,
+//     autoplayTimeout:2000,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         500:{
+//             items:3
+//         },
+//         1000:{
+//             items:4
+//         }
+//     }
+// });
 
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider', {
+		perPage    : 3,
+		breakpoints: {
+			600: {
+				perPage: 1,
+			}
+		}
+	} ).mount();
+} );
 
 //top to scroll button
 

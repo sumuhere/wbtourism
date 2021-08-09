@@ -10,8 +10,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/line-awesome.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- <link rel="stylesheet" href="css/splide.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/splide-default.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,7 +51,14 @@
               <li>
                 <a class="link-hover" href="#image-slider">Destinations</a>
               </li>
-              <li><a class="link-hover" href="https://www.wbtdcl.com/package" target="_blank">Booking</a></li>
+              <li>
+                <a
+                  class="link-hover"
+                  href="https://www.wbtdcl.com/package"
+                  target="_blank"
+                  >Booking</a
+                >
+              </li>
               <li><a class="link-hover" href="">Gallery</a></li>
               <li><a class="link-hover" href="">Contact</a></li>
             </ul>
@@ -147,137 +156,113 @@
 
     <!-- <----------------------------------Destination Section---------------------------------- -->
     <section id="image-slider">
-      <div class="container destination-heading">
-        <h2>
-          Start Planning Your Destination
-          <span style="color: #50cb93">Bengal</span>
-        </h2>
-        <div class="owl-carousel owl-theme autoplay">
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/victoria-memorial.jpg"
-                class="img-responsive"
-                alt="Victoria Memorial Hall"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Victoria Memorial Hall</h3>
-                <p>Kolkata</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/darjeeling.jpg"
-                class="img-responsive"
-                alt="Darjeeling"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Darjeeling</h3>
-                <p>Darjeeling District</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
+      <div class="container">
+        <div class="destination-heading">
+          <h2>
+            Start Planning Your Destination
+            <span style="color: #50cb93">Bengal</span>
+          </h2>
+        </div>
+        
+        <div class="splide" id="card-slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/darjeeling.jpg"
+                  class="img-responsive"
+                  alt="Darjeeling"
+                  loading="lazy"
+                />
+                <div class="slider-img-info">
+                  <h3>Darjeeling</h3>
+                  <p>Darjeeling District</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
                 src="./assets/images/square-cut/dakshineswar-temple.jpg"
                 class="img-responsive"
                 alt="Dakshineswar Temple"
                 loading="lazy"
-              />
-              <div class="slider-img-info">
+                />
+                <div class="slider-img-info">
                 <h3>Dakshineswar Temple</h3>
                 <p>Kolkata</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
+              
+              </li>
+              <li class="splide__slide">
+                <img
                 src="./assets/images/square-cut/digha.jpg"
                 class="img-responsive"
                 alt="Digha Sea Beach"
                 loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Digha Sea Beach</h3>
-                <p>Purba Medinipur</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
+                />
+                <div class="slider-img-info">
+                  <h3>Digha Sea Beach</h3>
+                  <p>Purba Medinipur</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
                 src="./assets/images/square-cut/cooch-behar-rajbari.jpg"
                 class="img-responsive"
                 alt="Cooch Behar Palace"
                 loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Cooch Behar Palace</h3>
-                <p>Cooch Behar District</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
+                />
+                <div class="slider-img-info">
+                  <h3>Cooch Behar Palace</h3>
+                  <p>Cooch Behar District</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
                 src="./assets/images/square-cut/bankura.jpg"
                 class="img-responsive"
                 alt="Bankura"
                 loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Bankura</h3>
-                <p>Bankura District</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
+                />
+                <div class="slider-img-info">
+                  <h3>Bankura</h3>
+                  <p>Bankura District</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
                 src="./assets/images/square-cut/dooars.jpg"
                 class="img-responsive"
                 alt="Dooars"
                 loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Dooars</h3>
-                <p>Jalpaiguri</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
-                src="./assets/images/square-cut/iskon-temple.jpg"
-                class="img-responsive"
-                alt="Iskon Temple"
-                loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Mayapur</h3>
-                <p>Nadia</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="owl-img-par">
-              <img
+                />
+                <div class="slider-img-info">
+                  <h3>Dooars</h3>
+                  <p>Jalpaiguri</p>
+                </div>
+              </li class="splide__slide">
+                <img
+                  src="./assets/images/square-cut/iskon-temple.jpg"
+                  class="img-responsive"
+                  alt="Iskon Temple"
+                  loading="lazy"
+                  />
+                <div class="slider-img-info">
+                    <h3>Mayapur</h3>
+                    <p>Nadia</p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img
                 src="./assets/images/square-cut/shantiniketan.jpg"
                 class="img-responsive"
                 alt="Iskon Temple"
                 loading="lazy"
-              />
-              <div class="slider-img-info">
-                <h3>Shantiniketan</h3>
-                <p>Birbhum</p>
-              </div>
-            </div>
+                />
+                <div class="slider-img-info">
+                  <h3>Shantiniketan</h3>
+                  <p>Birbhum</p>   
+                </div>            
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -312,7 +297,9 @@
 
     <!-- Adding JavaScript -->
     <script src="./js/jquery-3.1.1.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <!-- <script src="./js/splide.min.js"></script> -->
+    <!-- <script src="./js/owl.carousel.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- Typewriter.js -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
