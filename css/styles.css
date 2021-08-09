@@ -36,9 +36,13 @@ nav {
   width: 56px;
 }
 
-.nav-header p {
+.nav-header .dept-tour, .nav-header .govt-wb {
   font-size: large;
   font-weight: 700;
+}
+
+.nav-header .dept-tour {
+  text-align: center;
 }
 
 .navbar ul li {
