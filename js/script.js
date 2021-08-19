@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //top to scroll button
 
-/*scroll to top*/
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
