@@ -18,7 +18,7 @@
 #### :globe_with_meridians: Live Site
 https://tourism.suman.social
 
-#### :earth_asia: Domain Alias
+#### :earth_asia: Mirrors
 https://tourismwb.pages.dev
 
 https://thatsuman.github.io/wbtourism
